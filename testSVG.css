@@ -1,0 +1,32 @@
+.blend{
+	mix-blend-mode: multiply;
+	background-blend-mode: multiply;
+}
+
+#Texte_bleu path{
+animation-name: animTexteBleu;
+animation-duration: 6s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes animTexteBleu{
+0% {fill:#FFFFFF;}
+50%{fill:#00FFFF;}
+100% {fill:#000000;}
+}
+
+#Texte_rouge path{
+animation-name: animTexteRouge;
+animation-duration: 6s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes animTexteRouge{
+0% {fill:#000000;}
+50%{fill:#FF0000;}
+100% {fill:#FFFFFF;}
+}
