@@ -22,8 +22,8 @@ animation-direction: alternate;
 }
 
 @keyframes animMoveTexteBleu{
-0% {transform: translateX(-2.5%);}
-100% {transform: translateX(2.5%);}
+0% {transform: translateX(-2.7%);}
+100% {transform: translateX(2.7%);}
 }
 
 
@@ -79,14 +79,31 @@ animation-direction: alternate;
     animation-name: animSanta;
     animation-duration: 0.2s;
     animation-timing-function: ease;
-  animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-fill-mode: forwards;
 }
 
+
 @keyframes animSanta{
     0%{transform: translateY(-10%);}
     100%{transform: translateY(20%);}
+}
+
+
+#Santa:hover #chapeauSanta{
+    transform-origin: -3% 55%;
+    animation-name: animChapeau;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animChapeau{
+    0%{transform: translateY(-7%);}
+    100%{transform: translateY(0%);}
 }
 
 
