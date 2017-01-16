@@ -76,14 +76,32 @@ animation-direction: alternate;
     100%{transform: rotate(-10deg);}
 }
 
+#Santa:hover #yeuxSanta ,#Santa:hover #boucheSanta{
+    transform-origin: -3% 55%;
+    animation-name: animSanta;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+  animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
 
-
-#Rene *{
-    opacity: 0.95;
+@keyframes animSanta{
+    0%{transform: translateY(-10%);}
+    100%{transform: translateY(20%);}
 }
 
 
+#Rene:hover #brancheGauche ,#Rene:hover #brancheDroite{
+    animation-name: animRene;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+  animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
 
-#Santa *{
-    opacity: 0.95;
+@keyframes animRene{
+    0%{transform: rotate(15deg);}
+    100%{transform: rotate(-15deg);}
 }
