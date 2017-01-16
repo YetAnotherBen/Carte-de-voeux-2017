@@ -26,20 +26,6 @@ animation-direction: alternate;
 100% {transform: translateX(2.5%);}
 }
 
-#Typo:hover #Texte_bleu, #Typo:hover #Texte_rouge{
-    transform-origin: -20% 55%;
-    animation-name: animTexteBleu;
-    animation-duration: 0.1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-}
-
-@keyframes animTexteBleu{
-    0% {transform: translateX(10%);}
-    50%{transform: scale(0.5);}
-    75%{transform: scale(2);}
-    100% {transform: translateX(-10%);}
-}
 
 
 #Cadeau, #Rene, #Santa {
@@ -73,8 +59,6 @@ animation-direction: alternate;
     0%{transform: rotate(-3deg);}
     100%{transform: rotate(3deg);}
 }
-
-
 
 
 #Cadeau:hover #Cadeau_Top{
@@ -118,4 +102,61 @@ animation-direction: alternate;
 @keyframes animRene{
     0%{transform: rotate(15deg);}
     100%{transform: rotate(-15deg);}
+}
+
+.spamSanta *{
+    animation-name: spamSanta;
+    animation-duration: 0.05s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes spamSanta{
+    0%{background-color: #FF0000; fill: #FF0000; opacity: 1}
+    49%{background-color: #FF0000; fill: #FF0000; opacity: 1}
+    50%{background-color: #00FFFF; fill: #00FFFF; opacity: 1}
+    100%{background-color: #00FFFF; fill: #00FFFF; opacity: 1}
+
+}
+
+.spamRene *{
+    animation-name: spamRene;
+    animation-duration: 0.05s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spamRene{
+    0%{background-color: #FF0000; fill: #FF0000; opacity: 1}
+    49%{background-color: #FF0000; fill: #FF0000; opacity: 1}
+    50%{background-color: #00FFFF; fill: #00FFFF; opacity: 1}
+    100%{background-color: #00FFFF; fill: #00FFFF; opacity: 1}
+
+}
+
+.rouge{
+    animation-name: booyaka;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes booyaka{
+    0%{background-color: #FF0000; fill: #FF0000;}
+    49%{background-color: #FF0000; fill: #FF0000;}
+    50%{background-color: #00FFFF; fill: #00FFFF;}
+    100%{background-color: #00FFFF; fill: #00FFFF;}
+}
+
+.spamText{
+    transform-origin: -20% 55%;
+    animation-name: animTexteBleu;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animTexteBleu{
+    0% {transform: translateX(50%);}
+    50%{transform: scale(0.5);}
+    75%{transform: scale(2);}
+    100% {transform: translateX(-50%);}
 }
