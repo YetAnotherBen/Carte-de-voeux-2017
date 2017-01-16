@@ -4,8 +4,12 @@ background-blend-mode: multiply;
 }
 
 main{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 svg{
@@ -14,118 +18,211 @@ svg{
 
 
 #Texte_bleu{
-animation-name: animMoveTexteBleu;
-animation-duration: 3s;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-direction: alternate;
+-webkit-animation-name: animMoveTexteBleu;
+        animation-name: animMoveTexteBleu;
+-webkit-animation-duration: 3s;
+        animation-duration: 3s;
+-webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+        animation-direction: alternate;
+}
+
+@-webkit-keyframes animMoveTexteBleu{
+0% {-webkit-transform: translateX(-2.7%);transform: translateX(-2.7%);}
+100% {-webkit-transform: translateX(2.7%);transform: translateX(2.7%);}
 }
 
 @keyframes animMoveTexteBleu{
-0% {transform: translateX(-2.7%);}
-100% {transform: translateX(2.7%);}
+0% {-webkit-transform: translateX(-2.7%);transform: translateX(-2.7%);}
+100% {-webkit-transform: translateX(2.7%);transform: translateX(2.7%);}
 }
 
 
 
 #Cadeau, #Rene, #Santa {
-    transform-origin: center;
-    animation-name: animMoveCadeau;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-animation-name: animMoveCadeau;
+            animation-name: animMoveCadeau;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+
+@-webkit-keyframes animMoveCadeau{
+    0%{-webkit-transform: rotate(-3deg);transform: rotate(-3deg);}
+    50%{-webkit-transform: scale(1);transform: scale(1);}
+    75%{-webkit-transform: scale(1.01);transform: scale(1.01);}
+    100%{-webkit-transform: rotate(3deg);transform: rotate(3deg);}
 }
 
 @keyframes animMoveCadeau{
-    0%{transform: rotate(-3deg);}
-    50%{transform: scale(1);}
-    75%{transform: scale(1.01);}
-    100%{transform: rotate(3deg);}
+    0%{-webkit-transform: rotate(-3deg);transform: rotate(-3deg);}
+    50%{-webkit-transform: scale(1);transform: scale(1);}
+    75%{-webkit-transform: scale(1.01);transform: scale(1.01);}
+    100%{-webkit-transform: rotate(3deg);transform: rotate(3deg);}
 }
 
 
 #Cadeau_Top, #chapeauSanta, #brancheGauche, #brancheDroite {
-    transform-origin: center;
-    animation-name: animMoveCadeauTop;
-    animation-duration: 0.2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-animation-name: animMoveCadeauTop;
+            animation-name: animMoveCadeauTop;
+    -webkit-animation-duration: 0.2s;
+            animation-duration: 0.2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animMoveCadeauTop{
+    0%{-webkit-transform: rotate(-3deg);transform: rotate(-3deg);}
+    100%{-webkit-transform: rotate(3deg);transform: rotate(3deg);}
 }
 
 @keyframes animMoveCadeauTop{
-    0%{transform: rotate(-3deg);}
-    100%{transform: rotate(3deg);}
+    0%{-webkit-transform: rotate(-3deg);transform: rotate(-3deg);}
+    100%{-webkit-transform: rotate(3deg);transform: rotate(3deg);}
 }
 
 
 #Cadeau:hover #Cadeau_Top{
-    transform-origin: -3% 55%;
-    animation-name: animOuvreCadeau;
-    animation-duration: 0.6s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
+    -webkit-transform-origin: -3% 55%;
+            transform-origin: -3% 55%;
+    -webkit-animation-name: animOuvreCadeau;
+            animation-name: animOuvreCadeau;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animOuvreCadeau{
+    0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
 }
 
 @keyframes animOuvreCadeau{
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(-10deg);}
+    0%{-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
 }
 
 #Santa:hover #yeuxSanta ,#Santa:hover #boucheSanta{
-    transform-origin: -3% 55%;
-    animation-name: animSanta;
-    animation-duration: 0.2s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+    -webkit-transform-origin: -3% 55%;
+            transform-origin: -3% 55%;
+    -webkit-animation-name: animSanta;
+            animation-name: animSanta;
+    -webkit-animation-duration: 0.2s;
+            animation-duration: 0.2s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes animSanta{
+    0%{-webkit-transform: translateY(-10%);transform: translateY(-10%);}
+    100%{-webkit-transform: translateY(20%);transform: translateY(20%);}
 }
 
 
 @keyframes animSanta{
-    0%{transform: translateY(-10%);}
-    100%{transform: translateY(20%);}
+    0%{-webkit-transform: translateY(-10%);transform: translateY(-10%);}
+    100%{-webkit-transform: translateY(20%);transform: translateY(20%);}
 }
 
 
 #Santa:hover #chapeauSanta{
-    transform-origin: -3% 55%;
-    animation-name: animChapeau;
-    animation-duration: 0.4s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+    -webkit-transform-origin: -3% 55%;
+            transform-origin: -3% 55%;
+    -webkit-animation-name: animChapeau;
+            animation-name: animChapeau;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animChapeau{
+    0%{-webkit-transform: translateY(-7%);transform: translateY(-7%);}
+    100%{-webkit-transform: translateY(0%);transform: translateY(0%);}
 }
 
 @keyframes animChapeau{
-    0%{transform: translateY(-7%);}
-    100%{transform: translateY(0%);}
+    0%{-webkit-transform: translateY(-7%);transform: translateY(-7%);}
+    100%{-webkit-transform: translateY(0%);transform: translateY(0%);}
 }
 
 
 #Rene:hover #brancheGauche ,#Rene:hover #brancheDroite{
-    animation-name: animRene;
-    animation-duration: 0.4s;
-    animation-timing-function: ease;
-  animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: animRene;
+            animation-name: animRene;
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animRene{
+    0%{-webkit-transform: rotate(15deg);transform: rotate(15deg);}
+    100%{-webkit-transform: rotate(-15deg);transform: rotate(-15deg);}
 }
 
 @keyframes animRene{
-    0%{transform: rotate(15deg);}
-    100%{transform: rotate(-15deg);}
+    0%{-webkit-transform: rotate(15deg);transform: rotate(15deg);}
+    100%{-webkit-transform: rotate(-15deg);transform: rotate(-15deg);}
 }
 
 .spamSanta *{
-    animation-name: spamSanta;
-    animation-duration: 0.05s;
-    animation-iteration-count: infinite;
-    animation-direction: reverse;
+    -webkit-animation-name: spamSanta;
+            animation-name: spamSanta;
+    -webkit-animation-duration: 0.05s;
+            animation-duration: 0.05s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: reverse;
+            animation-direction: reverse;
+}
+
+@-webkit-keyframes spamSanta{
+    0%{background-color: #FF0000; fill: #FF0000; opacity: 1}
+    49%{background-color: #FF0000; fill: #FF0000; opacity: 1}
+    50%{background-color: #00FFFF; fill: #00FFFF; opacity: 1}
+    100%{background-color: #00FFFF; fill: #00FFFF; opacity: 1}
+
 }
 
 @keyframes spamSanta{
@@ -137,9 +234,20 @@ animation-direction: alternate;
 }
 
 .spamRene *{
-    animation-name: spamRene;
-    animation-duration: 0.05s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: spamRene;
+            animation-name: spamRene;
+    -webkit-animation-duration: 0.05s;
+            animation-duration: 0.05s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes spamRene{
+    0%{background-color: #FF0000; fill: #FF0000; opacity: 1}
+    49%{background-color: #FF0000; fill: #FF0000; opacity: 1}
+    50%{background-color: #00FFFF; fill: #00FFFF; opacity: 1}
+    100%{background-color: #00FFFF; fill: #00FFFF; opacity: 1}
+
 }
 
 @keyframes spamRene{
@@ -151,9 +259,19 @@ animation-direction: alternate;
 }
 
 .rouge{
-    animation-name: booyaka;
-    animation-duration: 0.1s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: booyaka;
+            animation-name: booyaka;
+    -webkit-animation-duration: 0.1s;
+            animation-duration: 0.1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes booyaka{
+    0%{background-color: #FF0000; fill: #FF0000;}
+    49%{background-color: #FF0000; fill: #FF0000;}
+    50%{background-color: #00FFFF; fill: #00FFFF;}
+    100%{background-color: #00FFFF; fill: #00FFFF;}
 }
 
 @keyframes booyaka{
@@ -164,16 +282,27 @@ animation-direction: alternate;
 }
 
 .spamText{
-    transform-origin: -20% 55%;
-    animation-name: animTexteBleu;
-    animation-duration: 0.2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-transform-origin: -20% 55%;
+            transform-origin: -20% 55%;
+    -webkit-animation-name: animTexteBleu;
+            animation-name: animTexteBleu;
+    -webkit-animation-duration: 0.2s;
+            animation-duration: 0.2s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animTexteBleu{
+    0% {-webkit-transform: translateX(50%);transform: translateX(50%);}
+    50%{-webkit-transform: scale(0.5);transform: scale(0.5);}
+    75%{-webkit-transform: scale(2);transform: scale(2);}
+    100% {-webkit-transform: translateX(-50%);transform: translateX(-50%);}
 }
 
 @keyframes animTexteBleu{
-    0% {transform: translateX(50%);}
-    50%{transform: scale(0.5);}
-    75%{transform: scale(2);}
-    100% {transform: translateX(-50%);}
-}
+    0% {-webkit-transform: translateX(50%);transform: translateX(50%);}
+    50%{-webkit-transform: scale(0.5);transform: scale(0.5);}
+    75%{-webkit-transform: scale(2);transform: scale(2);}
+    100% {-webkit-transform: translateX(-50%);transform: translateX(-50%);}
